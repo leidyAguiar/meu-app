@@ -54,6 +54,35 @@ export function Home() {
               </Card.Body>
             </Card>
           </Col>
+          <Col xs="12">
+            <Card>
+              <Card.Body>
+                <Card.Title>
+                  <h1>Aula 2</h1>
+                </Card.Title>
+                <Row>
+                  <Col xs="4">
+                    <Link
+                      to="/APPContador"
+                      style={{
+                        textDecoration: "none",
+                        color: "#000",
+                      }}
+                    >
+                      <Card className="shadow-sm p-3 mb-5 bg-body rounded">
+                        <Card.Body>
+                          <Card.Title>APP Contador</Card.Title>
+                          <Card.Text>
+                            <p>Este é o componente de APPContador</p>
+                          </Card.Text>
+                        </Card.Body>
+                      </Card>
+                    </Link>
+                  </Col>
+                </Row>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
       </Container>
     </>
