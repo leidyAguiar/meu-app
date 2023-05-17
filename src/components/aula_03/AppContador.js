@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { RxReset } from "react-icons/rx";
 import { Card, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const avatarHomem = {
   name: "Homem",
@@ -54,6 +55,8 @@ export default function AppContador() {
   }
 
   return (
+    <>
+    <Link to="/">Retornar a página inicial</Link>
     <Container>
       <Row>
       <Col xs="12">
@@ -149,5 +152,7 @@ export default function AppContador() {
         
       </Row>
     </Container>
+    
+    </>
   );
 }

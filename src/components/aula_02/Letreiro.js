@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export const Letreiro = () => {
   const [texto, setTexto] = useState("");
@@ -16,8 +16,8 @@ export const Letreiro = () => {
 
   return (
     <>
+      <Link to="/">Retornar a página inicial</Link>
       <h1>{texto}</h1>
-      <Link to={"/"}>Voltar</Link>
     </>
   );
 };

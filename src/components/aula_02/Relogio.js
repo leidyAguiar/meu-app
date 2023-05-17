@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export function Relogio() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -11,9 +11,11 @@ export function Relogio() {
   }, []);
   return (
     <>
+      <Link to="/">Retornar a página inicial</Link>
       <h1>{time}</h1>
-      <Link to={"/"}>Voltar</Link>
     </>
   );
+
 }
 export default Relogio;
+
