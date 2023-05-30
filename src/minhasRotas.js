@@ -21,6 +21,10 @@ import BucketList from "./components/aula_05/BucketList";
 import ShapeEditor from "./components/aula_05/ShapeEditor";
 import CounterList from "./components/aula_05/CounterList";
 import MovingDot from "./components/aula_05/MovingDot";
+import FormQuiz from "./components/aula_06/FormQuiz";
+import FormTicket from "./components/aula_06/FormTicket";
+import Accordion from "./components/aula_06/Accordion";
+import Messenger from "./components/aula_06/App";
 
 export default function MinhasRotas() {
   return (
@@ -50,10 +54,10 @@ export default function MinhasRotas() {
         <Route path="/list4" element={<List4 />} />
         <Route path="/bucketList" element={<BucketList />} />
         
-        <Route path="/formQuiz" element={<Atv03 />} />
-        <Route path="/formTicket" element={<Atv03 />} />
-        <Route path="/accordion" element={<Atv03 />} />
-        <Route path="/contactList" element={<Atv03 />} />
+        <Route path="/formQuiz" element={<FormQuiz />} />
+        <Route path="/formTicket" element={<FormTicket />} />
+        <Route path="/accordion" element={<Accordion />} />
+        <Route path="/contactList" element={<Messenger />} />
 
         <Route path="/calculadora" element={<Atv03 />} />
 
