@@ -25,6 +25,7 @@ import FormQuiz from "./components/aula_06/FormQuiz";
 import FormTicket from "./components/aula_06/FormTicket";
 import Accordion from "./components/aula_06/Accordion";
 import Messenger from "./components/aula_06/App";
+import JogoMemoria from "./components/aula_08/JogoMemoria";
 
 export default function MinhasRotas() {
   return (
@@ -59,9 +60,9 @@ export default function MinhasRotas() {
         <Route path="/accordion" element={<Accordion />} />
         <Route path="/contactList" element={<Messenger />} />
 
-        <Route path="/calculadora" element={<Atv03 />} />
+        <Route path="/atv03" element={<Atv03 />} />
 
-        <Route path="/jogo-da-memória" element={<Atv03 />} />
+        <Route path="/jogo-da-memória" element={<JogoMemoria />} />
       </Routes>
     </BrowserRouter>
   );
