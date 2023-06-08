@@ -48,13 +48,18 @@ const Home = () => {
         </ul>
 
         <ul>
-          <h3>Atividade 05</h3>
+          <h3>Atividade 06</h3>
           <li><Link to="/calculadora">Calculadora</Link></li>
         </ul>
 
         <ul>
-          <h3>Atividade 06</h3>
+          <h3>Atividade 07</h3>
           <li><Link to="/jogo-da-memória">Jogo da memória</Link></li>
+        </ul>
+
+        <ul>
+          <h3>Atividade 08</h3>
+          <li><Link to="/carrinho-de-compras">Carrinho de compras</Link></li>
         </ul>
 
       </nav>
