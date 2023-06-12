@@ -12,10 +12,7 @@ export function Relogio() {
   return (
     <>
       <Link to="/">Retornar a página inicial</Link>
-      <div className="container">
-        <h1 className="text-center">Relogio</h1>
-        <h1 className="text-center">{time}</h1>
-      </div>
+      <h1>{time}</h1>
     </>
   );
 

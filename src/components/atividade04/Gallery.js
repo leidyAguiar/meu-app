@@ -18,7 +18,7 @@ export default function Gallery() {
   return (
     <>
       <Link to="/">Retornar a página inicial</Link> <br />
-      <button className="btn btn-secondary" onClick={handleNextClick}>Next</button>
+      <button onClick={handleNextClick}>Next</button>
       <h2>
         <i>{sculpture.name} </i>
         by {sculpture.artist}
@@ -26,7 +26,7 @@ export default function Gallery() {
       <h3>
         ({index + 1} of {sculptureList.length})
       </h3>
-      <button className="btn btn-secondary" onClick={handleMoreClick}>
+      <button onClick={handleMoreClick}>
         {showMore ? "Hide" : "Show"} details
       </button>
       {showMore && <p>{sculpture.description}</p>}
