@@ -17,7 +17,10 @@ export const Letreiro = () => {
   return (
     <>
       <Link to="/">Retornar a página inicial</Link>
-      <h1>{texto}</h1>
+      <div className="container text-center">
+        <h1>Letreiro</h1>
+        <h1>{texto}</h1>
+      </div>
     </>
   );
 };
