@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./Home";
-import Atv03 from "./Atv03";
 import Relogio from "./components/atividade01/Relogio";
 import Letreiro from "./components/atividade01/Letreiro";
 import AppContador from "./components/atividade02/AppContador";
@@ -60,8 +59,6 @@ export default function MinhasRotas() {
         <Route path="/formTicket" element={<FormTicket />} />
         <Route path="/accordion" element={<Accordion />} />
         <Route path="/contactList" element={<Messenger />} />
-
-        <Route path="/atv03" element={<Atv03 />} />
 
         <Route path="/jogo-da-memória" element={<JogoMemoria />} />
 
