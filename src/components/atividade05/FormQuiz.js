@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 export default function FormQuiz() {
   const [answer, setAnswer] = useState("");
@@ -29,7 +29,7 @@ export default function FormQuiz() {
 
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <h2>City quiz</h2>
       <p>
         In which city is there a billboard that turns air into drinkable water?

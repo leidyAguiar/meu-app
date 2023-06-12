@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 export default function Form() {
   const [to, setTo] = useState("Alice");
@@ -14,7 +14,7 @@ export default function Form() {
 
   return (
     <>
-    <Link to="/">Retornar a página inicial</Link> <br />
+    <BotaoVoltarInicio /> <br />
     <form onSubmit={handleSubmit}>
       <label>
         To{" "}

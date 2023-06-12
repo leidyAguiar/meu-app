@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 function Button({ onClick, children }) {
   return (
@@ -31,7 +31,7 @@ function Signup() {
 export default function Toolbar() {
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link>
+      <BotaoVoltarInicio />
       <div className="container text-center">
         <h1>Toolbar</h1>
         <div

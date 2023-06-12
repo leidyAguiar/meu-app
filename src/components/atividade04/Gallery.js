@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { sculptureList } from "./data.js";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 export default function Gallery() {
   const [index, setIndex] = useState(0);
@@ -17,7 +17,7 @@ export default function Gallery() {
   let sculpture = sculptureList[index];
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <button className="btn btn-secondary" onClick={handleNextClick}>Next</button>
       <h2>
         <i>{sculpture.name} </i>

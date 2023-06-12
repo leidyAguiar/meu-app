@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 let initialArtists = [
   { id: 0, name: "Marta Covin Andrade" },
@@ -12,7 +12,7 @@ export default function List2() {
 
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <h1>Inspiring sculptors:</h1>
       <ul>
         {artists.map((artist) => (

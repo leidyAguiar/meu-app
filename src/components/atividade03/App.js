@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 import Avatar from "./Avatar.js";
 
 function Card({ children }) {
@@ -26,7 +26,7 @@ function Profile() {
 export default function Gallery() {
     return (
       <>
-      <Link to="/">Retornar a página inicial</Link>
+      <BotaoVoltarInicio />
       <section>
         <h1>Amazing scientits</h1>
         <Profile />

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 import { people } from "./data";
 import { getImageUrl } from "./utils";
 
@@ -14,7 +14,7 @@ export default function List() {
   ));
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link>
+      <BotaoVoltarInicio />
       <ul>{listItems}</ul>
     </>
   );

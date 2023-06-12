@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 export default function Accordion() {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <h2>Almaty, Kazakhstan</h2>
       <Panel
         title="About"

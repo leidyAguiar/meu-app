@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 import minions from "./imagens/minions.gif";
 
 function embaralhar(animes) {
@@ -106,7 +106,7 @@ export default function JogoMemoria() {
 
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">

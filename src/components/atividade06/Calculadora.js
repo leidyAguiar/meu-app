@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 import Display from "./Display";
 import Botao from "./Botao";
 import "./calculadora.css";
@@ -80,7 +80,7 @@ export default function Calculadora() {
   }
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <h1 className="text-center">Calculadora</h1>
       <div className="container-geral">
         <div className="container-calculadora">

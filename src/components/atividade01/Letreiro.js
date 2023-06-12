@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 export const Letreiro = () => {
   const [texto, setTexto] = useState("");
@@ -16,7 +17,7 @@ export const Letreiro = () => {
 
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link>
+      <BotaoVoltarInicio />
       <div className="container text-center">
         <h1>Letreiro</h1>
         <h1>{texto}</h1>

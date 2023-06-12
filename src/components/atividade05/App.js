@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import Chat from './Chat.js';
 import ContactList from './ContactList.js';
-import { Link } from 'react-router-dom';
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 export default function Messenger() {
   const [to, setTo] = useState(contacts[0]);
   return (
     <>
-    <Link to="/">Retornar a página inicial</Link> <br />
+    <BotaoVoltarInicio /> <br />
     <div>
       <ContactList
         contacts={contacts}

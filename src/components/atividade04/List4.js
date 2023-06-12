@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 let nextId = 3;
 const initialList = [
@@ -19,7 +19,7 @@ export default function List4() {
 
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <button onClick={handleClick}>Reverse</button>
       <ul>
         {list.map((artwork) => (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 let nextId = 3;
 const initialArtistis = [
@@ -24,7 +24,7 @@ export default function List3() {
   }
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <h1>Inspiring sculptors</h1>
       <input value={name} onChange={(e) => setName(e.target.value)} />
       <button onClick={handleClick}>Insert</button>

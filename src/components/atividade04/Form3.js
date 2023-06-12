@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 export default function Form3() {
   const [person, setPerson] = useState({
@@ -50,7 +50,7 @@ export default function Form3() {
   
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <label>
         Name:
         <input value={person.name} onChange={handleNameChange} />

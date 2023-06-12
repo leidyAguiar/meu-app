@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 let initialShapes = [
   { id: 0, type: "circle", x: 50, y: 100 },
@@ -26,7 +26,7 @@ export default function ShapeEditor() {
 
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <button onClick={handleClick}>Move circles downs!</button>
       {shapes.map((shape) => (
         <div

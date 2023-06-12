@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 let nextId = 0;
 
@@ -8,7 +8,7 @@ export default function List1() {
   const [artists, setArtists] = useState([]);
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <h1>Inspiring sculptors</h1>
       <input value={name} onChange={(e) => setName(e.target.value)} />
       <button

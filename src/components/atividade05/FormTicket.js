@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 export default function FormTicket() {
   const [firstName, setFirstName] = useState("");
@@ -17,7 +17,7 @@ export default function FormTicket() {
 
   return (
     <>
-    <Link to="/">Retornar a página inicial</Link> <br />
+    <BotaoVoltarInicio /> <br />
       <h2>Let's check you in</h2>
       <label>
         First name: <input value={firstName} onChange={handleFirstNameChange} />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 let initialCounters = [0, 0, 0];
 
@@ -20,7 +20,7 @@ export default function CounterList() {
   return (
     <ul>
       <>
-        <Link to="/">Retornar a página inicial</Link> <br />
+        <BotaoVoltarInicio /> <br />
         {counters.map((counter, i) => (
           <li key={i}>
             {counter}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 export default function MovingDot() {
   const [position, setPosition] = useState({
@@ -8,7 +8,7 @@ export default function MovingDot() {
   });
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <div
         onPointerMove={(e) => {
           setPosition({
@@ -27,7 +27,7 @@ export default function MovingDot() {
             position: "absolute",
             backgroundColor: "red",
             borderRadius: "50%",
-            transform: "translate(${position.x}px, ${position.y}px)",
+            transform: `translate(${position.x}px, ${position.y}px)`,
             left: -10,
             top: -10,
             width: 20,

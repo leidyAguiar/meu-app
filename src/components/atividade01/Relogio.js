@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 export function Relogio() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -11,7 +11,7 @@ export function Relogio() {
   }, []);
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link>
+      <BotaoVoltarInicio />
       <div className="container">
         <h1 className="text-center">Relogio</h1>
         <h1 className="text-center">{time}</h1>

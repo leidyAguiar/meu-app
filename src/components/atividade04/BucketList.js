@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import BotaoVoltarInicio from "../BotaoVoltarInicio";
 
 let nextId = 3;
 const initialList = [
@@ -38,7 +38,7 @@ export default function BucketList() {
 
   return (
     <>
-      <Link to="/">Retornar a página inicial</Link> <br />
+      <BotaoVoltarInicio /> <br />
       <h1>Art Bucket List</h1>
       <h2>My list of art to see:</h2>
       <ItemList artworks={myList} onToggle={handleToggleMyList} />
