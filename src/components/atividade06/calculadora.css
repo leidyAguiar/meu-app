@@ -35,6 +35,7 @@
 }
 
 .botao-generico {
+    border: none;
     background: #272727;
     color: white;
     width: 65px;

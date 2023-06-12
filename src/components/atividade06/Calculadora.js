@@ -70,7 +70,10 @@ export default function Calculadora() {
 
   function igual() {
     if (valores.length === 0) {
-      return setDisplay("0");
+      return;
+    }
+    if (isOperador(valores[valores.length - 1])) {
+      return;
     }
     const resultado = eval(valores.join(""));
     setValores([...resultado.toString().split("")]);
