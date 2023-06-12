@@ -26,6 +26,7 @@ import Accordion from "./components/atividade05/Accordion";
 import Messenger from "./components/atividade05/App";
 import JogoMemoria from "./components/atividade07/JogoMemoria";
 import Loja from "./components/atividade08/loja/Loja";
+import Calculadora from "./components/atividade06/Calculadora";
 
 export default function MinhasRotas() {
   return (
@@ -59,6 +60,8 @@ export default function MinhasRotas() {
         <Route path="/formTicket" element={<FormTicket />} />
         <Route path="/accordion" element={<Accordion />} />
         <Route path="/contactList" element={<Messenger />} />
+
+        <Route path="/calculadora" element={<Calculadora />} />
 
         <Route path="/jogo-da-memória" element={<JogoMemoria />} />
 
