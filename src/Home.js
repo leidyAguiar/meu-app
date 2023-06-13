@@ -56,12 +56,6 @@ const Home = () => {
           <h3>Atividade 07</h3>
           <li className="col-6"><Link className="btn btn-secondary m-1" to="/jogo-da-memória">Jogo da memória</Link></li>
         </ul>
-
-        <ul className="row list-unstyled">
-          <h3>Atividade 08</h3>
-          <li className="col-6"><Link className="btn btn-secondary m-1" to="/carrinho-de-compras">Carrinho de compras</Link></li>
-        </ul>
-
       </nav>
     </div>
   );

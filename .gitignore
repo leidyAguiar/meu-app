@@ -17,6 +17,9 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.vscode
+
+src/components/atividade08/lojaApi/node_modules
 
 npm-debug.log*
 yarn-debug.log*
